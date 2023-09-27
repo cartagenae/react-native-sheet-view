@@ -128,6 +128,8 @@ iOS                 | Android
 :------------------:|:------------------:
 ![HeaderTitle](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/8fa4440b-a33e-4b71-9a0c-25cebc9522bd) | ![HeaderTitle](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/6e851555-4408-4402-a744-eee8d6857b2f)
 
+##
+
 ```
 <BottomSheet
   visible={isBottomSheetVisible}
@@ -158,6 +160,8 @@ iOS                 | Android
 iOS                 | Android
 :------------------:|:------------------:
 ![TitleColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/22e95466-9940-4671-a670-a5b9d871cbeb) | ![TitleColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/77bc06a0-6835-4618-9d27-e7afa6107bd7)
+
+##
 
 ```
 <BottomSheet
@@ -191,6 +195,8 @@ iOS                 | Android
 :------------------:|:------------------:
 ![ShowCancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/1da004b3-ff3d-4e86-88fb-0b73c1718741) | ![ShowCancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/1326ae26-8f53-44f6-9615-0597eba14223)
 
+##
+
 ```
 <BottomSheet
   visible={isBottomSheetVisible}
@@ -222,6 +228,8 @@ iOS                 | Android
 :------------------:|:------------------:
 ![CancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/edabdbe5-ae11-4fe6-9f2f-9ec37f237412) | ![CancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/6f354f6c-dc5b-4d1f-a159-4840bccaa975)
 
+##
+
 ```
 <BottomSheet
   visible={isBottomSheetVisible}
@@ -252,6 +260,8 @@ iOS                 | Android
 :------------------:|:------------------:
 ![LineColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/88d9ecf8-badc-49e3-ad9e-2daede87ef77) | ![LineColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/08c61477-7754-4cbe-93a6-88ab6b0282b1)
 
+##
+
 ```
 <BottomSheet
   visible={isBottomSheetVisible}
@@ -280,6 +290,8 @@ iOS                 | Android
 iOS                 | Android
 :------------------:|:------------------:
 ![BackgroundColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/d27f34e9-d6b9-4556-acd3-ba776562c63e) | ![BackgroundColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/19bb348f-fba0-434e-9a6c-3086bddc2c53)
+
+##
 
 ```
 <BottomSheet
