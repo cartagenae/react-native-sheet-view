@@ -1,5 +1,5 @@
 # React Native Sheet View
-A bottom sheet component for react native
+###### A simple bottom sheet component for any React Native project
 
 iOS                 | Android
 :------------------:|:------------------:
@@ -305,4 +305,4 @@ iOS                 | Android
 ---
 
 ## License
-React Native Floating Action Button is under the **MIT License**. See bundled **License** file for details.
+React Native Sheet View is under the **MIT License**. See bundled <a href='https://github.com/cartagenae/react-native-sheet-view/blob/main/LICENSE' alt='license file'>**LICENSE**</a> file for details.
