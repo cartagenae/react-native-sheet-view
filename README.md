@@ -61,7 +61,7 @@ const App = () => {
     <View
       style={styles.container}
     >
-      <Text>Example usage of your react-native-sheet-view component</Text>
+      <Text>React Native Sheet View</Text>
 
       <Button
         title='Show Bottom Sheet'
