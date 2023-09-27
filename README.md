@@ -3,8 +3,7 @@
 
 iOS                 | Android
 :------------------:|:------------------:
-![MainDemonstration](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/15147c1f-cfd4-49da-9915-c2642ce9c819) | ![MainDemonstration](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/035955c9-951a-49d8-a982-de18c7296e81)
-
+![MainDemonstration](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/1b8c9f66-d629-4294-96af-0bf0e2af0984) | ![MainDemonstration](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/9eb8b864-6206-43f8-988b-b49a76cdfc38)
 
 ---
 
@@ -127,7 +126,7 @@ export default App;
 
 iOS                 | Android
 :------------------:|:------------------:
-![HeaderTitle](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/ef5fb926-f360-4d90-a072-2eb854e38876) | ![HeaderTitle](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/54cb92ca-241c-416e-82c4-4457268fe358)
+![HeaderTitle](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/8fa4440b-a33e-4b71-9a0c-25cebc9522bd) | ![HeaderTitle](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/6e851555-4408-4402-a744-eee8d6857b2f)
 
 ```
 <BottomSheet
@@ -158,7 +157,7 @@ iOS                 | Android
 
 iOS                 | Android
 :------------------:|:------------------:
-![TitleColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/a7cafb3a-fba3-4231-95fd-59228815b03a) | ![TitleColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/e9b505b9-54a2-4323-9fb0-036cf75376c1)
+![TitleColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/22e95466-9940-4671-a670-a5b9d871cbeb) | ![TitleColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/77bc06a0-6835-4618-9d27-e7afa6107bd7)
 
 ```
 <BottomSheet
@@ -190,7 +189,7 @@ iOS                 | Android
 
 iOS                 | Android
 :------------------:|:------------------:
-![ShowCancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/34824134-1ef1-4ce6-bac8-991c8983a036) | ![ShowCancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/5c1a2323-9739-4894-a2c6-cffaa4e6357e)
+![ShowCancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/1da004b3-ff3d-4e86-88fb-0b73c1718741) | ![ShowCancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/1326ae26-8f53-44f6-9615-0597eba14223)
 
 ```
 <BottomSheet
@@ -221,7 +220,7 @@ iOS                 | Android
 
 iOS                 | Android
 :------------------:|:------------------:
-![CancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/73ad42f5-5b7f-41d1-908a-714bc2592564) | ![CancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/e91ce92c-6104-4595-b552-7626c831f504)
+![CancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/edabdbe5-ae11-4fe6-9f2f-9ec37f237412) | ![CancelText](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/6f354f6c-dc5b-4d1f-a159-4840bccaa975)
 
 ```
 <BottomSheet
@@ -251,7 +250,7 @@ iOS                 | Android
 
 iOS                 | Android
 :------------------:|:------------------:
-![LineColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/673a4ead-42b2-44b0-a229-97482e87928a) | ![LineColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/1c892949-808b-43ee-b7cf-21da65359d06)
+![LineColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/88d9ecf8-badc-49e3-ad9e-2daede87ef77) | ![LineColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/08c61477-7754-4cbe-93a6-88ab6b0282b1)
 
 ```
 <BottomSheet
@@ -280,7 +279,7 @@ iOS                 | Android
 
 iOS                 | Android
 :------------------:|:------------------:
-![BackgroundColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/bf2cdbd4-084f-482f-a1ea-a36f24ad7e3a) | ![BackgroundColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/eff12fc0-92ee-40be-a994-ea30af2a6fb0)
+![BackgroundColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/d27f34e9-d6b9-4556-acd3-ba776562c63e) | ![BackgroundColor](https://github.com/cartagenae/react-native-sheet-view/assets/6395465/19bb348f-fba0-434e-9a6c-3086bddc2c53)
 
 ```
 <BottomSheet
