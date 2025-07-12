@@ -1,0 +1,16 @@
+{
+  "name": "react-native-sheet-view",
+  "version": "1.0.6",
+  "description": "A bottom sheet component for react native",
+  "main": "BottomSheet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Cartagena",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.5",
+    "react-native-modal": "^13.0.1"
+  }
+}

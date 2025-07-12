@@ -8,11 +8,11 @@ iOS                 | Android
 ---
 
 ### Installation
-```
+```bash
 npm install --save react-native-sheet-view
 ```
 or
-```
+```bash
 yarn add react-native-sheet-view
 ```
 
@@ -20,7 +20,7 @@ yarn add react-native-sheet-view
 
 ### Import the BottomSheet component
 
-```
+```js
 import BottomSheet from 'react-native-sheet-view';
 ```
 
@@ -28,7 +28,7 @@ import BottomSheet from 'react-native-sheet-view';
 
 ### Usage
 
-```
+```js
 import React, { useState } from 'react';
 import {
   Text,
@@ -130,7 +130,7 @@ iOS                 | Android
 
 ##
 
-```
+```js
 <BottomSheet
   visible={isBottomSheetVisible}
   options={options}
@@ -163,7 +163,7 @@ iOS                 | Android
 
 ##
 
-```
+```js
 <BottomSheet
   visible={isBottomSheetVisible}
   options={options}
@@ -197,7 +197,7 @@ iOS                 | Android
 
 ##
 
-```
+```js
 <BottomSheet
   visible={isBottomSheetVisible}
   options={options}
@@ -230,7 +230,7 @@ iOS                 | Android
 
 ##
 
-```
+```js
 <BottomSheet
   visible={isBottomSheetVisible}
   options={options}
@@ -262,7 +262,7 @@ iOS                 | Android
 
 ##
 
-```
+```js
 <BottomSheet
   visible={isBottomSheetVisible}
   options={options}
@@ -293,7 +293,7 @@ iOS                 | Android
 
 ##
 
-```
+```js
 <BottomSheet
   visible={isBottomSheetVisible}
   options={options}
