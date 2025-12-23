@@ -73,7 +73,7 @@ const App = () => {
         options={options}
         onSelect={(index) => {
           Alert.alert(
-            `${options[index]`,
+            `${options[index]}`,
             `You selected ${options[index]}`,
             [
               {
@@ -136,7 +136,7 @@ iOS                 | Android
   options={options}
   onSelect={(index) => {
     Alert.alert(
-      `${options[index]`,
+      `${options[index]}`,
       `You selected ${options[index]}`,
       [
         {
@@ -169,7 +169,7 @@ iOS                 | Android
   options={options}
   onSelect={(index) => {
     Alert.alert(
-      `${options[index]`,
+      `${options[index]}`,
       `You selected ${options[index]}`,
       [
         {
@@ -203,7 +203,7 @@ iOS                 | Android
   options={options}
   onSelect={(index) => {
     Alert.alert(
-      `${options[index]`,
+      `${options[index]}`,
       `You selected ${options[index]}`,
       [
         {
@@ -236,7 +236,7 @@ iOS                 | Android
   options={options}
   onSelect={(index) => {
     Alert.alert(
-      `${options[index]`,
+      `${options[index]}`,
       `You selected ${options[index]}`,
       [
         {
@@ -268,7 +268,7 @@ iOS                 | Android
   options={options}
   onSelect={(index) => {
     Alert.alert(
-      `${options[index]`,
+      `${options[index]}`,
       `You selected ${options[index]}`,
       [
         {
@@ -299,7 +299,7 @@ iOS                 | Android
   options={options}
   onSelect={(index) => {
     Alert.alert(
-      `${options[index]`,
+      `${options[index]}`,
       `You selected ${options[index]}`,
       [
         {

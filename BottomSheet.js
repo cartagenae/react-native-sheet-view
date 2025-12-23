@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
   View,
   Pressable,
@@ -11,20 +11,75 @@ import Modal from 'react-native-modal';
 
 const BottomSheet = ({
   visible,
-  options,
+  options = [],
   onCancel,
   onSelect,
-  cancelText,
+  cancelText = 'Cancel',
   headerTitle,
-  backgroundColor,
-  showCancelText,
-  lineColor,
-  titleColor,
+  backgroundColor = '#fff',
+  showCancelText = false,
+  lineColor = 'lightgray',
+  titleColor = '#000',
 }) => {
   const handleSelectOption = (index) => {
-    onSelect(index);
-    onCancel();
+    onSelect?.(index);
+    onCancel?.();
   };
+
+  // Memoize dynamic styles for better performance with React 19
+  const containerStyle = useMemo(() => [
+    styles.container,
+    {
+      marginBottom: Platform.OS === 'ios'
+        ? 40
+        : 0,
+      width: Platform.OS === 'ios'
+        ? '95%'
+        : '100%',
+    }
+  ], []);
+
+  const contentContainerStyle = useMemo(() => ({
+    backgroundColor,
+    borderRadius: Platform.OS === 'ios'
+      ? 10
+      : 0,
+  }), [backgroundColor]);
+
+  const titleContainerStyle = useMemo(() => [
+    styles.title,
+    {
+      borderTopLeftRadius: Platform.OS === 'ios'
+        ? 10
+        : 0,
+      borderTopRightRadius: Platform.OS === 'ios'
+        ? 10
+        : 0,
+      borderBottomWidth: 1,
+      borderBottomColor: lineColor,
+    }
+  ], [lineColor]);
+
+  const titleTextStyle = useMemo(() => ({
+    fontSize: 12,
+    color: titleColor,
+  }), [titleColor]);
+
+  const cancelContainerStyle = useMemo(() => ({
+    backgroundColor,
+    borderRadius: Platform.OS === 'ios'
+      ? 10
+      : 0,
+    borderColor: 'gray',
+  }), [backgroundColor]);
+
+  const cancelTextStyle = useMemo(() => ({
+    color: Platform.OS === 'ios'
+      ? '#2b70de'
+      : 'red',
+    fontWeight: '600',
+    fontSize: 20,
+  }), []);
 
   return (
     <Modal
@@ -35,149 +90,66 @@ const BottomSheet = ({
       animationOut='slideOutDown'
       animationOutTiming={500}
     >
-      <View
-        style={[
-          styles.container,
+      <View style={containerStyle}>
+        <View style={contentContainerStyle}>
           {
-            marginBottom: Platform.OS === 'ios'
-              ? 40
-              : 0,
-            width: Platform.OS === 'ios'
-              ? '95%'
-              : '100%'
-          }
-        ]}
-      >
-        <View
-          style={{
-            backgroundColor: backgroundColor !== undefined
-              ? backgroundColor
-              : '#fff',
-            borderRadius: Platform.OS === 'ios'
-              ? 10
-              : 0,
-          }}
-        >
-          {
-            headerTitle !== undefined && ((
-              <View
-                style={[
-                  styles.title,
-                  {
-                    borderTopLeftRadius: Platform.OS === 'ios'
-                      ? 10
-                      : 0,
-                    borderTopRightRadius: Platform.OS === 'ios'
-                      ? 10
-                      : 0,
-                    borderBottomWidth: 1,
-                    borderBottomColor: lineColor !== undefined
-                      ? lineColor
-                      : 'lightgray',
-                  }
-                ]}
-              >
-                <Text
-                  style={{
-                    fontSize: 12,
-                    color: titleColor !== undefined
-                      ? titleColor
-                      : '#fff'
-                  }}
-                >
+            headerTitle && (
+              <View style={titleContainerStyle}>
+                <Text style={titleTextStyle}>
                   {headerTitle}
                 </Text>
               </View>
-            ))
+            )
           }
           {
-            options.map((option, index) => (
-              <Pressable
-                key={index}
-                style={[
-                  styles.option,
-                  {
-                    borderBottomWidth: Platform.OS === 'ios'
-                      ? index < options.length - 1
-                        ? 1
-                        : 0
-                      : 1,
-                    borderBottomColor: Platform.OS === 'ios'
-                    ? index < options.length - 1
-                      ? lineColor !== undefined
-                        ? lineColor
-                        : 'lightgray'
-                      : null
-                    : lineColor !== undefined
-                      ? lineColor
-                      : 'lightgray'
-                  }
-                ]}
-                onPress={() => (
-                  handleSelectOption(index)
-                )}
-              >
-                <Text
-                  style={{
-                    color: '#2b70de',
-                    fontWeight: 500,
-                    fontSize: 20,
-                  }}
+            options.map((option, index) => {
+              const isLastOption = index === options.length - 1;
+              const optionStyle = [
+                styles.option,
+                {
+                  borderBottomWidth: Platform.OS === 'ios'
+                    ? (isLastOption ? 0 : 1)
+                    : 1,
+                  borderBottomColor: Platform.OS === 'ios'
+                    ? (isLastOption ? null : lineColor)
+                    : lineColor,
+                }
+              ];
+
+              return (
+                <Pressable
+                  key={`option-${index}-${option}`}
+                  style={optionStyle}
+                  onPress={() => handleSelectOption(index)}
                 >
-                  {option}
-                </Text>
-              </Pressable>
-            ))
+                  <Text style={styles.optionText}>
+                    {option}
+                  </Text>
+                </Pressable>
+              );
+            })
           }
         </View>
 
         {
-          Platform.OS === 'ios' && ((
-            <View
-              style={{
-                height: 15
-              }}
-            />
-          ))
+          Platform.OS === 'ios' && (
+            <View style={styles.spacer} />
+          )
         }
 
         {
-          showCancelText === true && ((
-            <View
-              style={{
-                backgroundColor: backgroundColor !== undefined
-                  ? backgroundColor
-                  : '#fff',
-                borderRadius: Platform.OS === 'ios'
-                  ? 10
-                  : 0,
-                borderColor: 'gray',
-              }}
-            >
+          showCancelText && (
+            <View style={cancelContainerStyle}>
               <Pressable
-                style={[
-                  styles.cancelButton,
-                ]}
+                style={styles.cancelButton}
                 onPress={onCancel}
               >
-                <Text
-                  style={{
-                    color: Platform.OS === 'ios'
-                      ? '#2b70de'
-                      : 'red',  
-                    fontWeight: 600,
-                    fontSize: 20,
-                  }}
-                >
-                  {
-                    cancelText !== undefined
-                      ? cancelText
-                      : 'Cancel'
-                  }
+                <Text style={cancelTextStyle}>
+                  {cancelText}
                 </Text>
               </Pressable>
             </View>
-          ))
+          )
         }
       </View>
     </Modal>
@@ -206,10 +178,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  optionText: {
+    color: '#2b70de',
+    fontWeight: '500',
+    fontSize: 20,
+  },
   cancelButton: {
     padding: 15,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  spacer: {
+    height: 15,
   },
 });
 
