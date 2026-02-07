@@ -14,5 +14,30 @@
   },
   "dependencies": {
     "react-native-modal": "^14.0.0-rc.1"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "mobile-ui",
+    "bottom-sheet",
+    "sheet",
+    "drawer",
+    "modal",
+    "panel",
+    "overlay",
+    "interactive",
+    "gesture",
+    "gesture-handler",
+    "drag",
+    "snap-points",
+    "animation",
+    "animation-library",
+    "reanimated",
+    "smooth",
+    "customizable",
+    "cross-platform",
+    "ios",
+    "android",
+    "react-ui"
+  ]
 }
