@@ -1,16 +1,18 @@
+
 {
   "name": "react-native-sheet-view",
   "version": "1.0.12",
-  "description": "A bottom sheet component for react native",
-  "main": "BottomSheet.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "A bottom sheet component for React Native with JavaScript and TypeScript support",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "Eric Cartagena",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=19.2.8",
-    "react-native": ">=0.86.3"
+    "react": ">=19.2.8 <20.0.0",
+    "react-native": ">=0.86.3 <1.0.0"
   },
   "dependencies": {
     "react-native-modal": "^14.0.0-rc.1"
@@ -38,6 +40,28 @@
     "cross-platform",
     "ios",
     "android",
-    "react-ui"
-  ]
+    "react-ui",
+    "typescript",
+    "javascript",
+    "tsx",
+    "jsx"
+  ],
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build:js": "babel src --extensions .ts,.tsx --out-dir dist",
+    "build:types": "tsc --project tsconfig.json",
+    "build": "npm run clean && npm run build:js && npm run build:types",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^8.1.0",
+    "@babel/core": "^8.1.2",
+    "@babel/plugin-transform-modules-commonjs": "^8.1.2",
+    "@babel/preset-react": "^8.0.1",
+    "@babel/preset-typescript": "^8.0.7",
+    "@types/react": "^19.3.0",
+    "react": "19.3.1",
+    "react-native": "0.88.1",
+    "typescript": "^7.0.2"
+  }
 }
